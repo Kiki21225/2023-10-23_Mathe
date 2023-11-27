@@ -28,16 +28,16 @@ def test_subtrahieren():
 
 
 def test_subtrahieren_characters():
-    with pytest.raises(TypeError) as err:
+    with pytest.raises(ValueError) as err:
         subtrahieren("a", 7)
 
 def test_multiplizieren_characters():
-    with pytest.raises(TypeError) as err:
+    with pytest.raises(ValueError) as err:
         multiplizieren("b", "C")
 
 
 def test_dividieren_characters():
-    with pytest.raises(TypeError) as err:
+    with pytest.raises(ValueError) as err:
         dividieren("m", "123")
 
 def test_multiplizieren_success():
